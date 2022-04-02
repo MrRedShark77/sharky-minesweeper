@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Sharky MineSweeper</title>
+
+    <script src="main.js"></script>
+</head>
+<body onload="loadGame()" oncontextmenu="return false">
+    <div class="table">
+        <div class="top">
+            <button onclick="loadGame()">New Game</button>
+        </div><div class="top">
+            Mines: <span id="mines">10</span>
+        </div><div class="top">
+            Time: <span id="time">0.0</span>
+        </div><div class="top" id="result"></div>
+    </div>
+    <div class="table">
+        <div class="top">
+            Width: <input type="number" id="width" min="2" value="9">
+        </div><div class="top">
+            Height: <input type="number" id="height" min="2" value="9">
+        </div><div class="top">
+            Mines: <input type="number" id="s_mines" min="2" value="10">
+        </div>
+    </div><div class="table">
+        <div class="top">
+            Help 1: Left Click to Open<br>
+            Help 2: Right Click to Flag<br>
+            Help 3: Left Click opened to Chord
+        </div>
+    </div><br>
+    <div id="board"></div>
+</body>
+</html>
